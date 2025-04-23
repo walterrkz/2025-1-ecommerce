@@ -1,0 +1,44 @@
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.modal-body-left {
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--redSF);
+}
+
+.modal-body-right {
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.modal-body-right img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.sneaker-btn {
+  background-color: var(--redSF);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.sneaker-btn:hover {
+  background-color: #b41d1a;
+}

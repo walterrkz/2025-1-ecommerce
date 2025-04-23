@@ -1,0 +1,50 @@
+<div class="page-titles">
+  <img src="/titulos/carrito_title.png" alt="" />
+</div>
+<div class="form-container">
+  @if (carritoResumen.length>0) {
+    <table class="tabla-carrito">
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Cantidad</th>
+          <th>Precio unitario</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of carritoResumen; track item) {
+        <tr>
+          <td>
+            <img [src]="item.img" alt="Sneaker" class="modelo-foto" />
+          </td>
+          <td>{{ item.model }}</td>
+          <td>{{ item.marca }}</td>
+          <td>
+            <div class="cantidad-control">
+              <button (click)="onBtnRemove(item.id)">−</button>
+              <span>{{ item.cantidad }}</span>
+              <button (click)="onBtnAdd(item.id)">+</button>
+            </div>
+          </td>
+          <td>${{ item.importe.toFixed(2) }}</td>
+          <td>${{ (item.importe * item.cantidad).toFixed(2) }}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+    <div class="total-carrito-container">
+      <div class="total-carrito-label">Total:</div>
+      <div class="total-carrito-valor">${{ totalQty.toFixed(2) }}</div>
+    </div>
+    <div class="comprar-ahora-container">
+      <button class="btn-comprar" routerLink="/checkout">
+        Comprar ahora
+      </button>
+    </div>
+  }@else{
+    <h2>¡No hay productos, seguir comprando!</h2>
+  }
+</div>

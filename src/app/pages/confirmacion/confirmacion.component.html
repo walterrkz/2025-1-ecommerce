@@ -1,0 +1,36 @@
+<div class="form-container">
+    @if (purchaseToDisplay){<div class="purchase-info">
+        <div>
+          <h1 class="purchase-label">Nombre:</h1>
+          <p>{{ purchaseToDisplay.nombre }}</p>
+        </div>
+        <div>
+          <h1 class="purchase-label">Tarjeta:</h1>
+          <p>**** **** **** {{ purchaseToDisplay.numeroTarjeta.slice(-4) }}</p>
+        </div>
+      </div>
+    <h2>Resumen de compra</h2>
+    <table class="tabla-compra">
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Precio unitario</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of purchaseToDisplay.carrito; track item) {
+          <tr>
+            <td><img [src]="item.img" alt="Sneaker" class="modelo-foto" /></td>
+            <td>{{ item.model }}</td>
+            <td>{{ item.marca }}</td>
+            <td>${{ item.importe.toFixed(2) }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>}@else{
+        <h1 class="purchase-label">Error: no hay confirmación de compra</h1>
+    }
+  </div>
+  

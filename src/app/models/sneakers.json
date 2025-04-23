@@ -1,0 +1,452 @@
+[
+  {
+    "id":1,
+    "model":"Air Max 90",
+    "marca":"Nike",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker1.png",
+    "descuento":0,
+    "precio":2808
+  },
+  {
+    "id":2,
+    "model":"Superstar",
+    "marca":"Adidas",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker2.png",
+    "descuento":0,
+    "precio":2554
+  },
+  {
+    "id":3,
+    "model":"Classic Leather",
+    "marca":"Reebok",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker3.png",
+    "descuento":15,
+    "precio":2464
+  },
+  {
+    "id":4,
+    "model":"Air Jordan 1",
+    "marca":"Nike",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker4.png",
+    "descuento":0,
+    "precio":3026
+  },
+  {
+    "id":5,
+    "model":"Yeezy Boost 350",
+    "marca":"Adidas",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker5.png",
+    "descuento":0,
+    "precio":2315
+  },
+  {
+    "id":6,
+    "model":"Blazer Mid",
+    "marca":"Nike",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker6.png",
+    "descuento":0,
+    "precio":2334
+  },
+  {
+    "id":7,
+    "model":"Stan Smith",
+    "marca":"Adidas",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker7.png",
+    "descuento":0,
+    "precio":1821
+  },
+  {
+    "id":8,
+    "model":"Club C 85",
+    "marca":"Reebok",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker8.png",
+    "descuento":13,
+    "precio":3546
+  },
+  {
+    "id":9,
+    "model":"Air Force 1",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker9.png",
+    "descuento":0,
+    "precio":3085
+  },
+  {
+    "id":10,
+    "model":"UltraBoost",
+    "marca":"Adidas",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker10.png",
+    "descuento":0,
+    "precio":1827
+  },
+  {
+    "id":11,
+    "model":"Cortez",
+    "marca":"Puma",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker11.png",
+    "descuento":0,
+    "precio":2360
+  },
+  {
+    "id":12,
+    "model":"NMD R1",
+    "marca":"Adidas",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker12.png",
+    "descuento":0,
+    "precio":3209
+  },
+  {
+    "id":13,
+    "model":"Gel-Lyte III",
+    "marca":"Asics",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker13.png",
+    "descuento":38,
+    "precio":2135
+  },
+  {
+    "id":14,
+    "model":"Zoom Freak",
+    "marca":"Nike",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker14.png",
+    "descuento":34,
+    "precio":2748
+  },
+  {
+    "id":15,
+    "model":"Chuck Taylor",
+    "marca":"Converse",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker15.png",
+    "descuento":0,
+    "precio":2265
+  },
+  {
+    "id":16,
+    "model":"Pegasus 39",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker16.png",
+    "descuento":0,
+    "precio":2421
+  },
+  {
+    "id":17,
+    "model":"Puma Suede",
+    "marca":"Puma",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker17.png",
+    "descuento":18,
+    "precio":2340
+  },
+  {
+    "id":18,
+    "model":"Air Max 97",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker18.png",
+    "descuento":0,
+    "precio":2472
+  },
+  {
+    "id":19,
+    "model":"React Infinity",
+    "marca":"Nike",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker19.png",
+    "descuento":0,
+    "precio":3896
+  },
+  {
+    "id":20,
+    "model":"ZX Flux",
+    "marca":"Adidas",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker20.png",
+    "descuento":0,
+    "precio":2316
+  },
+  {
+    "id":21,
+    "model":"Kyrie 7",
+    "marca":"Nike",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker21.png",
+    "descuento":0,
+    "precio":2779
+  },
+  {
+    "id":22,
+    "model":"Forum Low",
+    "marca":"Adidas",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker22.png",
+    "descuento":31,
+    "precio":2704
+  },
+  {
+    "id":23,
+    "model":"Dunk Low",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker23.png",
+    "descuento":0,
+    "precio":2053
+  },
+  {
+    "id":24,
+    "model":"Air Max 1",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker24.png",
+    "descuento":0,
+    "precio":1831
+  },
+  {
+    "id":25,
+    "model":"Gel-Kayano",
+    "marca":"Asics",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker25.png",
+    "descuento":33,
+    "precio":2507
+  },
+  {
+    "id":26,
+    "model":"Future Rider",
+    "marca":"Puma",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker26.png",
+    "descuento":0,
+    "precio":3388
+  },
+  {
+    "id":27,
+    "model":"RS-X",
+    "marca":"Puma",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker27.png",
+    "descuento":16,
+    "precio":3452
+  },
+  {
+    "id":28,
+    "model":"Air More Uptempo",
+    "marca":"Nike",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker28.png",
+    "descuento":19,
+    "precio":2166
+  },
+  {
+    "id":29,
+    "model":"Jordan Delta",
+    "marca":"Nike",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker29.png",
+    "descuento":0,
+    "precio":1903
+  },
+  {
+    "id":30,
+    "model":"Wave Rider 26",
+    "marca":"Mizuno",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker30.png",
+    "descuento":0,
+    "precio":2530
+  },
+  {
+    "id":31,
+    "model":"Campus 00s",
+    "marca":"Adidas",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker31.png",
+    "descuento":0,
+    "precio":2642
+  },
+  {
+    "id":32,
+    "model":"FuelCell Rebel",
+    "marca":"New Balance",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker32.png",
+    "descuento":0,
+    "precio":3289
+  },
+  {
+    "id":33,
+    "model":"Air Zoom",
+    "marca":"Nike",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker33.png",
+    "descuento":16,
+    "precio":2328
+  },
+  {
+    "id":34,
+    "model":"IGNITE Limitless",
+    "marca":"Puma",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker34.png",
+    "descuento":0,
+    "precio":3625
+  },
+  {
+    "id":35,
+    "model":"Shox TL",
+    "marca":"Nike",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker35.png",
+    "descuento":0,
+    "precio":3930
+  },
+  {
+    "id":36,
+    "model":"Air Structure",
+    "marca":"Nike",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker36.png",
+    "descuento":0,
+    "precio":1859
+  },
+  {
+    "id":37,
+    "model":"Edge XT",
+    "marca":"Adidas",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker37.png",
+    "descuento":0,
+    "precio":2075
+  },
+  {
+    "id":38,
+    "model":"ZoomX Invincible",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker38.png",
+    "descuento":0,
+    "precio":2163
+  },
+  {
+    "id":39,
+    "model":"Stan Smith Lux",
+    "marca":"Adidas",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker39.png",
+    "descuento":0,
+    "precio":2441
+  },
+  {
+    "id":40,
+    "model":"Flyknit Racer",
+    "marca":"Nike",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker40.png",
+    "descuento":16,
+    "precio":3240
+  },
+  {
+    "id":41,
+    "model":"Air Huarache",
+    "marca":"Nike",
+    "categoria":"nuevo",
+    "img":"\/sneakers\/sneaker41.png",
+    "descuento":0,
+    "precio":2371
+  },
+  {
+    "id":42,
+    "model":"NB 574",
+    "marca":"New Balance",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker42.png",
+    "descuento":0,
+    "precio":2795
+  },
+  {
+    "id":43,
+    "model":"Metcon 7",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker43.png",
+    "descuento":0,
+    "precio":1853
+  },
+  {
+    "id":44,
+    "model":"RS Dreamer",
+    "marca":"Puma",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker44.png",
+    "descuento":11,
+    "precio":2347
+  },
+  {
+    "id":45,
+    "model":"Trinomic XT2",
+    "marca":"Puma",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker45.png",
+    "descuento":0,
+    "precio":3155
+  },
+  {
+    "id":46,
+    "model":"Nike Waffle One",
+    "marca":"Nike",
+    "categoria":"oferta",
+    "img":"\/sneakers\/sneaker46.png",
+    "descuento":29,
+    "precio":2530
+  },
+  {
+    "id":47,
+    "model":"Puma Mirage",
+    "marca":"Puma",
+    "categoria":"limitados",
+    "img":"\/sneakers\/sneaker47.png",
+    "descuento":0,
+    "precio":2016
+  },
+  {
+    "id":48,
+    "model":"Adidas Ozweego",
+    "marca":"Adidas",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker48.png",
+    "descuento":0,
+    "precio":3969
+  },
+  {
+    "id":49,
+    "model":"Nike Vapormax",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker49.png",
+    "descuento":0,
+    "precio":3695
+  },
+  {
+    "id":50,
+    "model":"Jordan Legacy 312",
+    "marca":"Nike",
+    "categoria":"general",
+    "img":"\/sneakers\/sneaker50.png",
+    "descuento":0,
+    "precio":3234
+  }
+]

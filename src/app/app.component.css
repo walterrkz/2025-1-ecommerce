@@ -1,0 +1,10 @@
+.contenedor-principal{
+    background-image: url('/bg-img.png');
+    min-height: 100vh;
+}
+
+.contenedor-router{
+    width: 80%;
+    margin: 6.25rem auto 0 auto;
+    padding: 1.5rem 0;
+}

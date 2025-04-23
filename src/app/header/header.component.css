@@ -1,0 +1,15 @@
+#logo-img {
+  width: 3.125rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #343a40;
+}
+
+.fixed-top {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}

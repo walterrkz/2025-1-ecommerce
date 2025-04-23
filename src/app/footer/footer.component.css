@@ -1,0 +1,10 @@
+img{
+    width: 3.125rem;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

@@ -1,0 +1,28 @@
+.contacto-container {
+  background-color: white;
+  border: var(--redSF) 0.5rem solid;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+}
+
+h5{
+    margin-bottom: 2rem;
+}
+
+.att-text{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ctc-bundle{
+    margin-bottom: 2rem;
+}
+
+.ctc-bundle p{
+    margin-bottom: .3rem;
+}
+
+ul{
+    list-style: none;
+}

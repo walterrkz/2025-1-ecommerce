@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    max-width: 1600px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: white;
+}
+
+:root {
+    --redSF: #eb1310;
+    --yellowSF: #f2b70b;
+  }
+
+  .page-titles img{
+    width: 40%;
+  }
+
+  .btn-submit {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--redSF);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    align-self: center;
+  }
+    
+  .btn-submit:hover:enabled {
+    background-color: #b41d1a;
+  }

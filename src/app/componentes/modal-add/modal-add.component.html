@@ -1,0 +1,46 @@
+<div
+  class="modal fade"
+  [id]="sneaker.id + 'modal'"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          {{ sneaker.model }}
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-body-left">
+          ¡Sé parte de la familia Sneaker Fever!
+        </div>
+        <div class="modal-body-right">
+          <img [src]="sneaker.img" alt="" />
+          <h5>{{ sneaker.model }}</h5>
+          <h6>{{ sneaker.marca }}</h6>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Descartar
+        </button>
+        <button
+          type="button"
+          class="sneaker-btn"
+          (click)="fnOnAgregarAlCarrito()"
+          data-bs-dismiss="modal"
+        >
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

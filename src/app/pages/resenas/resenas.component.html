@@ -1,0 +1,131 @@
+<div class="page-titles">
+  <img src="/titulos/reviews_title.png" alt="" />
+</div>
+<div class="form-container">
+  <div class="form-adjust">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="modelo">Modelo:</label>
+        <select id="modelo" formControlName="modelo" class="form-field">
+          <option value="">Seleccione un modelo</option>
+          @for (item of selectModel; track item) {
+          <option [value]="item">{{ item }}</option>
+          }
+        </select>
+        @if(userForm.get('modelo')?.invalid && userForm.get('modelo')?.touched){
+        <div class="val-error">Selecciona un modelo</div>
+        }
+      </div>
+      <div>
+        <label for="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+          class="form-field"
+        />
+        @if(userForm.get('name')?.invalid && userForm.get('name')?.touched){
+        <div class="val-error">
+          El nombre es obligatorio y debe tener al menos 5 caracteres
+        </div>
+        }
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          class="form-field"
+        />
+        @if(userForm.get('email')?.invalid && userForm.get('email')?.touched){
+        <div class="val-error">Proporciona un email válido</div>
+        }
+      </div>
+      <div>
+        <label for="comentario">Comentario:</label>
+        <textarea
+          id="comentario"
+          formControlName="comentario"
+          rows="4"
+          class="form-field"
+        ></textarea>
+        @if(userForm.get('comentario')?.invalid &&
+        userForm.get('comentario')?.touched){
+        <div class="val-error">
+          El comentario debe tener al menos 10 caracteres
+        </div>
+        }
+      </div>
+      <div id="score-container">
+        <label>Calificación:</label>
+        <div>
+          @for (star of [1,2,3,4,5]; track star) {
+          <span
+            (click)="seleccionarCalificacion(star)"
+            style="cursor: pointer; font-size: 1.5rem"
+            [style.color]="calificacionSeleccionada >= star ? 'gold' : '#ccc'"
+          >
+            ★
+          </span>
+          }
+        </div>
+      </div>
+      <div id="btn-container">
+        <button class="btn-submit" type="submit" [disabled]="userForm.invalid">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="resenas-print">
+  @if (resenas.length===0) {
+  <h2>¡Vaya, no existen reseñas todavía!</h2>
+  } @else {
+  <table class="tabla-resenas">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Producto</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Calificación</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of resenas; let i = $index; track item) {
+      <tr>
+        <td>{{ i + 1 }}</td>
+        <td class="producto-cell">
+          <img
+            [src]="getSneakerInfo(item.modelo).img"
+            alt="Sneaker"
+            class="modelo-foto"
+          />
+          <div class="modelo-nombre">{{ item.modelo }}</div>
+          <div class="marca-nombre">
+            {{ getSneakerInfo(item.modelo).marca }}
+          </div>
+        </td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.email }}</td>
+        <td>
+          @for (star of [1, 2, 3, 4, 5]; track star) {
+          <span [style.color]="star <= item.calificacion ? 'gold' : '#ccc'"
+            >★</span
+          >
+          }
+        </td>
+        <td>
+          <button class="btn-eliminar" (click)="removeResena(i)">
+            Eliminar
+          </button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  }
+</div>

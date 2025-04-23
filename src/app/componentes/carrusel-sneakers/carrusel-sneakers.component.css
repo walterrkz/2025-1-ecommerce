@@ -1,0 +1,15 @@
+.sneaker-grid {
+  display: grid;
+  gap: 2.5%;
+  justify-content: center;
+  align-items: start;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: darkgrey;
+  width: 3rem;
+  height: 3rem;
+}

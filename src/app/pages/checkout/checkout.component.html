@@ -1,0 +1,94 @@
+<div class="form-container">
+  @if (checkoutOn) {
+  <h1>Proceder con el pago</h1>
+  <div class="form-adjust">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input
+          id="nombre"
+          type="text"
+          class="form-field"
+          formControlName="nombre"
+        />
+        @if (checkoutForm.get('nombre')?.invalid &&
+        checkoutForm.get('nombre')?.touched) {
+        <div class="val-error">El nombre debe tener al menos 3 caracteres</div>
+        }
+      </div>
+
+      <div>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input
+          id="fechaNacimiento"
+          type="date"
+          class="form-field"
+          formControlName="fechaNacimiento"
+        />
+        @if (checkoutForm.get('fechaNacimiento')?.invalid &&
+        checkoutForm.get('fechaNacimiento')?.touched) {
+        <div class="val-error">Debes ser mayor de 18 años</div>
+        }
+      </div>
+
+      <div>
+        <label for="numeroTarjeta">Número de tarjeta:</label>
+        <input
+          id="numeroTarjeta"
+          type="text"
+          maxlength="16"
+          class="form-field"
+          formControlName="numeroTarjeta"
+        />
+        @if (checkoutForm.get('numeroTarjeta')?.invalid &&
+        checkoutForm.get('numeroTarjeta')?.touched) {
+        <div class="val-error">Ingresa 16 dígitos numéricos válidos</div>
+        }
+      </div>
+
+      <div>
+        <label for="fechaVencimiento">Fecha de vencimiento (MM/YY):</label>
+        <input
+          id="fechaVencimiento"
+          type="text"
+          maxlength="5"
+          placeholder="MM/YY"
+          class="form-field"
+          formControlName="fechaVencimiento"
+        />
+        @if (checkoutForm.get('fechaVencimiento')?.invalid &&
+        checkoutForm.get('fechaVencimiento')?.touched) {
+        <div class="val-error">Fecha inválida o vencida</div>
+        }
+      </div>
+
+      <div>
+        <label for="cvv">CVV:</label>
+        <input
+          id="cvv"
+          type="text"
+          maxlength="4"
+          class="form-field"
+          formControlName="cvv"
+        />
+        @if (checkoutForm.get('cvv')?.invalid &&
+        checkoutForm.get('cvv')?.touched) {
+        <div class="val-error">CVV inválido</div>
+        }
+      </div>
+
+      <div id="btn-container">
+        <button
+          class="btn-submit"
+          type="submit"
+          [disabled]="checkoutForm.invalid"
+        >
+          Finalizar compra
+        </button>
+      </div>
+    </form>
+  </div>
+  }@else {
+    <h1>No hay elementos en el carrito</h1>
+  }
+</div>

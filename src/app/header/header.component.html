@@ -1,0 +1,118 @@
+<nav
+  class="navbar navbar-expand-lg bg-dark text-white fixed-top"
+  style="height: 6.25rem"
+>
+  <div class="container px-0">
+    <a class="navbar-brand" routerLink="/home" style="cursor: pointer"
+      ><img src="logo.png" alt="" id="logo-img"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      style="border-color: white"
+    >
+      <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link active dropdown-toggle text-white"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Productos
+          </a>
+          <ul class="dropdown-menu bg-dark" style="border-color: darkgray">
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/productos"
+                (click)="onVerMas($event)"
+                >Todas las Categorías</a
+              >
+            </li>
+            <li>
+              <hr
+                class="dropdown-divider"
+                style="border-color: darkgrey; width: 90%; margin: 0 auto"
+              />
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/productos"
+                id="general"
+                (click)="onVerMas($event)"
+                >Generales</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/productos"
+                id="nuevo"
+                (click)="onVerMas($event)"
+                >Nuevos</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/productos"
+                id="limitados"
+                (click)="onVerMas($event)"
+                >Edición limitada</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/productos"
+                id="oferta"
+                (click)="onVerMas($event)"
+                >Ofertas</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="/resenas"
+            >Reseñas</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="/acerca"
+            >Acerca de nosotros</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" routerLink="/contacto"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+      <div
+        class="position-relative d-inline-block"
+        routerLink="/carrito"
+        style="cursor: pointer"
+      >
+        <i class="fas fa-shopping-cart fa-lg"></i>
+        @if (elementosCarroIn()>0) {
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          {{ elementosCarroIn()}}
+        </span>
+        }
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,27 @@
+<div class="page-titles">
+  <img src="/titulos/product_title.png" alt="">
+</div>
+<div class="content-container">
+  <div class="categoria-selector">
+    <label for="categoria">Filtrar por categoría:</label>
+    <select id="categoria" [(ngModel)]="categoriaSeleccionada">
+      <option value="todas">Todas las categorías</option>
+      @for (categoria of categorias; track categoria.value) {
+      <option [value]="categoria.value">{{ categoria.label }}</option>
+      }
+    </select>
+  </div>
+  <div class="search-input">
+    <input #msg type="text" (keyup)="sneakersFiltrados(msg.value)" placeholder="¿Qué estas buscando?" >
+ </div>
+</div>
+@if (sneakersFiltrados(msg.value).length>0) {
+  <div class="sneaker-grid">
+    @for (item of sneakersFiltrados(msg.value); track item) {
+    <app-card [sneaker]="item" (sneakerToAdd)="fnAddSneaker($event)"></app-card>
+    }
+  </div>
+}@else {
+  <h2>¡Ooops, no se encontró tu producto!</h2>
+}
+

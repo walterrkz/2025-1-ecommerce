@@ -1,0 +1,81 @@
+<app-carrusel></app-carrusel>
+<div class="carrusel-sneakers">
+  <div class="texto-carrusel">
+    <h1>¡Novedades que pisan fuerte!</h1>
+    <h3>
+      Descubre los sneakers más recientes que acaban de llegar a nuestra
+      colección. Desde lanzamientos exclusivos hasta los modelos que marcan
+      tendencia este año, cada par fue seleccionado para elevar tu estilo al
+      siguiente nivel. Desliza y encuentra tu próxima obsesión.
+    </h3>
+  </div>
+  <app-carrusel-sneakers
+    [sneakersIn]="getSneakersNuevos()"
+    [idCarrusel]="'new'"
+    (sneakerToAdd)="fnAddSneaker($event)"
+  ></app-carrusel-sneakers>
+  <div class="boton-contenedor">
+    <button class="ver-mas" routerLink="/productos" id="nuevo" (click)="onVerMas($event)">Ver más</button>
+  </div>
+</div>
+<div class="container-img-txt">
+  <div class="txt-img-imagen">
+    <img src="/neon-fiebre.png" alt="Sneaker Fiebre" />
+  </div>
+  <div class="txt-img-texto">
+    <p>
+      Explora nuestro catálogo exclusivo con modelos de edición limitada, las
+      novedades más recientes del mercado y ofertas especiales que no podrás
+      dejar pasar.
+    </p>
+  </div>
+</div>
+<div class="carrusel-sneakers">
+  <div class="texto-carrusel">
+    <h1>Ediciones limitadas, estilo ilimitado.</h1>
+    <h3>
+      Estos sneakers no están hechos para cualquiera. Son piezas únicas,
+      diseñadas para quienes buscan destacar con autenticidad y carácter.
+      Explora nuestra selección limitada antes de que desaparezca... porque
+      cuando se van, no vuelven.
+    </h3>
+  </div>
+  <app-carrusel-sneakers
+    [sneakersIn]="getSneakersLimitados()"
+    [idCarrusel]="'limited'"
+    (sneakerToAdd)="fnAddSneaker($event)"
+  ></app-carrusel-sneakers>
+  <div class="boton-contenedor">
+    <button class="ver-mas" routerLink="/productos" id="limitados" (click)="onVerMas($event)">Ver más</button>
+  </div>
+</div>
+<div class="container-img-txt">
+  <div class="txt-img-texto">
+    <p>
+      Desde clásicos icónicos hasta lanzamientos exclusivos, en Sneaker Fever
+      encontrarás todo lo que necesitas para llevar tu estilo al siguiente
+      nivel. ¡Tu próxima obsesión por los tenis comienza hoy!
+    </p>
+  </div>
+  <div class="txt-img-imagen">
+    <img src="/neon-sneaker.png" alt="Sneaker Neon" />
+  </div>
+</div>
+<div class="carrusel-sneakers">
+  <div class="texto-carrusel">
+    <h1>Ofertas que corren... como tú.</h1>
+    <h3>
+      Tus modelos favoritos ahora a precios que no vas a querer dejar pasar.
+      Esta es tu oportunidad de llevarte estilo, comodidad y actitud con
+      descuentos irresistibles. Aprovecha antes de que se agoten.
+    </h3>
+  </div>
+  <app-carrusel-sneakers
+    [sneakersIn]="getSneakersOferta()"
+    [idCarrusel]="'sales'"
+    (sneakerToAdd)="fnAddSneaker($event)"
+  ></app-carrusel-sneakers>
+  <div class="boton-contenedor">
+    <button class="ver-mas" routerLink="/productos" id="oferta" (click)="onVerMas($event)">Ver más</button>
+  </div>
+</div>

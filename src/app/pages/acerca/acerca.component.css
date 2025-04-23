@@ -1,0 +1,21 @@
+.acerca-text img{
+    width: 6.25rem;
+    vertical-align: bottom;
+}
+
+.acerca-text {
+    background-color: white;
+    border: var(--redSF) 0.5rem solid;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  span{
+    font-weight: 900;
+    font-style: oblique;
+    color: red
+  }

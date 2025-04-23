@@ -1,0 +1,25 @@
+<div class="sneaker-card">
+  <div class="sneaker-img-container">
+    <img [src]="sneaker.img" [alt]="sneaker.model" />
+  </div>
+  <h3 class="sneaker-model">{{ sneaker.model }}</h3>
+  <p class="sneaker-marca">{{ sneaker.marca }}</p>
+  <div class="sneaker-precio">
+    <span class="precio-original" [class.tachado]="sneaker.descuento > 0">
+      ${{ sneaker.precio | number : "1.2-2" }}
+    </span>
+    @if (sneaker.descuento>0) {
+    <span class="precio-descuento">
+      ${{ sneaker.precio * (1 - sneaker.descuento / 100) | number : "1.2-2" }}
+    </span>
+    }
+  </div>
+  <app-modal-add [sneaker]="sneaker" (addToCartSneaker)="fnAddSneaker($event)"></app-modal-add>
+  <button
+    class="sneaker-btn"
+    data-bs-toggle="modal"
+    [attr.data-bs-target]="'#' + sneaker.id + 'modal'"
+  >
+    ¡Lo quiero!
+  </button>
+</div>

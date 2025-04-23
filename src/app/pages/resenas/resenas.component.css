@@ -1,0 +1,160 @@
+.form-container {
+  background-color: white;
+  border: var(--redSF) 0.5rem solid;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+}
+
+.form-adjust{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-field {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.btn-submit {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--redSF);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 50%;
+  align-self: center;
+}
+
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-submit:hover:enabled {
+  background-color: #b41d1a;
+}
+
+.val-error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+#score-container{
+    align-items: center;
+}
+
+h2 {
+    color: var(--yellowSF);
+    text-shadow: -0.125rem -0.125rem 0 var(--redSF),
+      0.125rem -0.125rem 0 var(--redSF), -0.125rem 0.125rem 0 var(--redSF),
+      0.125rem 0.125rem 0 var(--redSF);
+      text-align: center;
+  }
+
+  .tabla-resenas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    table-layout: fixed;
+    background-color: white;
+  }
+  
+  .tabla-resenas thead {
+    background-color: #f2f2f2;
+  }
+  
+  .tabla-resenas th,
+  .tabla-resenas td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .tabla-resenas th {
+    font-weight: bold;
+  }
+   
+  .tabla-resenas td {
+    word-wrap: break-word;
+    background-color: white;
+  }
+  
+  .producto-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;    
+  }
+  
+  .modelo-foto {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .modelo-nombre {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .marca-nombre {
+    color: #555;
+    font-size: 0.85rem;
+  }
+  
+  .tabla-resenas td span {
+    font-size: 1.25rem;
+  }
+  
+  .btn-eliminar {
+    background-color: var(--redSF, #eb1310);
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-eliminar:hover {
+    background-color: #b41d1a;
+  }
+  
+  
